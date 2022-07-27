@@ -12,5 +12,7 @@ GAS_REPORT=true npx hardhat test
 npx hardhat node
 npx hardhat run scripts/deploy.ts
 npx hardhat run scripts/deploy.ts --network rskTestnet
-npx hardhat mint --minter-addr "<minter addr>" --rbtc-to-mint "<rbtc to mint>" --network rskTestnet
+
+# note the conversion of command options .. e.g minterAddr -> minter-addr etc
+npx hardhat mint --minter-addr "0x133b6ebca32c5dcc272a415457822e056ae41b33"  --rbtc-to-mint "1000000000000000" --total-value-to-send "2000000000000000" --network rskTestnet
 ```

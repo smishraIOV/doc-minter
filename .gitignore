@@ -11,3 +11,7 @@ artifacts
 
 #Secrets
 .secret
+
+#Mac
+.DS_Store
+

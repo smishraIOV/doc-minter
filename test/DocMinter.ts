@@ -10,12 +10,12 @@ describe("DocMinter", function () {
 
     const mocAddr = "0x2D2249Da581D4a44C96c7f8A2CAa977B3fd6B90E";
     const docAddr = "0x2D2249Da581D4a44C96c7f8A2CAa977B3fd6B90E";
-    const mocExchangeAddr = "0x2D2249Da581D4a44C96c7f8A2CAa977B3fd6B90E";
-    const mocInrateAddr = "0x2D2249Da581D4a44C96c7f8A2CAa977B3fd6B90E";
-    const mocVendorsAddr = "0x2D2249Da581D4a44C96c7f8A2CAa977B3fd6B90E";
+    //const mocExchangeAddr = "0x2D2249Da581D4a44C96c7f8A2CAa977B3fd6B90E";
+    //const mocInrateAddr = "0x2D2249Da581D4a44C96c7f8A2CAa977B3fd6B90E";
+    //const mocVendorsAddr = "0x2D2249Da581D4a44C96c7f8A2CAa977B3fd6B90E";
 
     const DocMinter = await ethers.getContractFactory("DocMinter");
-    const docMinter = await DocMinter.deploy(mocAddr, docAddr, mocExchangeAddr, mocInrateAddr, mocVendorsAddr);
+    const docMinter = await DocMinter.deploy(mocAddr, docAddr);//, mocExchangeAddr, mocInrateAddr, mocVendorsAddr);
 
     return { docMinter, owner, receiverAccount, reminderAccount };
   }
